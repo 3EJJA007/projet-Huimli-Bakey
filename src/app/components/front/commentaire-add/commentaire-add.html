@@ -1,0 +1,24 @@
+<div class="card p-3 mt-4 shadow-sm">
+  <h5>Ajouter un commentaire</h5>
+
+  <form [formGroup]="formCommentaire" (ngSubmit)="onAjouter()">
+    <div class="mb-2">
+      <label>Auteur :</label>
+      <input type="text" class="form-control" formControlName="auteur" placeholder="Votre nom">
+    </div>
+
+    <div class="mb-2">
+      <label>Message :</label>
+      <textarea class="form-control" rows="3" formControlName="message" placeholder="Votre avis..."></textarea>
+    </div>
+
+    <div class="mb-2">
+      <label>Note (1 à 5) :</label>
+      <input type="number" class="form-control" formControlName="note" min="1" max="5">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-sm mt-2" [disabled]="formCommentaire.invalid">
+       Ajouter
+    </button>
+  </form>
+</div>

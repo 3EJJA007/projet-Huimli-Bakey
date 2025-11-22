@@ -1,0 +1,37 @@
+<div class="container mt-4">
+  <h2>Gestion des sites archéologiques</h2>
+
+  <div class="text-end mb-3">
+    <a routerLink="/admin/add" class="btn btn-success btn-sm"><i class="bi bi-plus"></i> Ajouter un site</a>
+  </div>
+
+  
+    <table class="table table-bordered table-striped text-center">
+      <thead class="table-dark">
+        <tr>
+          <th>Photo</th>
+          <th>Nom</th>
+          <th>Localisation</th>
+          <th>Prix d'entrée</th>
+          <th>Ouvert</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (s of sites; track s.id) {
+          <tr>
+            <td><img [src]="s.photo" width="100"></td>
+            <td>{{ s.nom }}</td>
+            <td>{{ s.localisation }}</td>
+            <td>{{ s.prixEntree }} DT</td>
+            <td>{{ s.ouvert ? 'Oui' : 'Non' }}</td>
+            <td>
+              
+              <button (click)="supprimerSite(s.id)" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i> Supprimer</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  
+</div>

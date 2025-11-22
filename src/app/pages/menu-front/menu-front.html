@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 shadow-sm">
+  <a class="navbar-brand fw-bold text-light" routerLink="/home"> Patrimoine Tunisien</a>
+
+ 
+
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a routerLink="/home" routerLinkActive="active" class="nav-link">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/sites" routerLinkActive="active" class="nav-link">Sites archéologiques</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/about" routerLinkActive="active" class="nav-link">À propos</a>
+      </li>
+           <li class="nav-item text-light ms-4 d-flex align-items-center">
+        <img [src]="iconUrl" width="35" height="35" class="me-2">
+        <span>Tunis 🇹🇳 — {{ temperature }}°C</span>
+      </li>
+      <li>
+<button routerLink="/admin" class="btn btn-primary">
+  Espace Administrator
+</button>
+      </li>
+    </ul>
+  </div>
+</nav>

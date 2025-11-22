@@ -1,0 +1,23 @@
+<h2>Ajouter un site archéologique</h2>
+
+<form [formGroup]="siteForm" (ngSubmit)="onSubmit()">
+
+  <label>Nom :</label>
+  <input type="text" formControlName="nom" class="form-control">
+
+  <label>Localisation :</label>
+  <input type="text" formControlName="localisation" class="form-control">
+
+  <label>Photo (URL) :</label>
+  <input type="text" formControlName="photo" class="form-control">
+
+  <label>Date de découverte :</label>
+  <input type="date" formControlName="dateDecouverte" class="form-control">
+
+  <label>Prix d'entrée :</label>
+  <input type="number" formControlName="prixEntree" class="form-control">
+
+  <br>
+  <button type="submit" class="btn btn-primary">Ajouter</button>
+
+</form>

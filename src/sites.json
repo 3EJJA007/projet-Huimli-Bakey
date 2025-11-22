@@ -1,0 +1,123 @@
+{
+
+  "sites": [
+    {
+      "id": "1",
+      "nom": "Amphithéâtre d'El Jem",
+      "localisation": "El Jem, Mahdia",
+      "photo": "assets/images/El_Jem.jpg",
+      "dateDecouverte": "1979-01-01",
+      "prixEntree": 12,
+      "description": "L'un des plus grands amphithéâtres romains du monde.",
+      "ouvert": true,
+      "commentaires": [
+        {
+          "auteur": "ggs",
+          "message": "hdffdh",
+          "note": 5,
+          "date": "2025-11-08T08:28:57.862Z"
+        },
+        {
+          "auteur": "gfsdgsdgsdg",
+          "message": "hgfhdfhfdhfdhdfhfd",
+          "note": 4,
+          "date": "2025-11-08T10:19:27.807Z"
+        },
+        {
+          "auteur": "gsdgd",
+          "message": "sdgdsg",
+          "note": 4,
+          "date": "2025-11-08T14:08:15.423Z"
+        },
+        {
+          "auteur": "hfdgh",
+          "message": "dfhfd",
+          "note": 4,
+          "date": "2025-11-08T14:22:36.896Z"
+        },
+        {
+          "auteur": "fhfdh",
+          "message": "dfhfdhh",
+          "note": 4,
+          "date": "2025-11-08T18:44:59.890Z"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nom": "Dougga",
+      "localisation": "Béja",
+      "photo": "assets/images/Dougga.jpg",
+      "dateDecouverte": "1881-01-01",
+      "prixEntree": 10,
+      "description": "Site romain exceptionnel.",
+      "ouvert": true,
+      "commentaires": [
+        {
+          "auteur": "fdghh",
+          "message": "hdfh",
+          "note": 5,
+          "date": "2025-11-08T14:53:56.468Z"
+        },
+        {
+          "auteur": "hdhd",
+          "message": "fdhdfh",
+          "note": 4,
+          "date": "2025-11-08T15:24:15.267Z"
+        },
+        {
+          "auteur": "hfdhfd",
+          "message": "fdhfdh",
+          "note": 4,
+          "date": "2025-11-22T12:53:37.543Z"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nom": "Médina de Tunis",
+      "localisation": "Tunis",
+      "photo": "assets/images/PatioDarBenAbdallah.JPG",
+      "dateDecouverte": "1979-03-01",
+      "prixEntree": 25,
+      "description": "Petite bourgade, Tunis devient l'une des villes les plus importantes du monde islamique.",
+      "ouvert": false,
+      "commentaires": []
+    },
+    {
+      "id": "4",
+      "nom": "Médina de Sousse",
+      "localisation": "Sousse",
+      "photo": "assets/images/TUNISIE_SOUSSE_02.JPG",
+      "dateDecouverte": "1988-11-03",
+      "prixEntree": 18,
+      "description": "Site romain exceptionnel.",
+      "ouvert": true,
+      "commentaires": []
+    },
+    {
+      "id": "5",
+      "nom": "Bulla Regia",
+      "localisation": "Jendouba",
+      "photo": "assets/images/Kasbah_of_Sfax.jpg",
+      "dateDecouverte": "1881-01-01",
+      "prixEntree": 13,
+      "description": "Bulla Regia était une ville berbère, punique et romaine située près de l'actuelle Jendouba.",
+      "ouvert": false,
+      "commentaires": [
+        {
+          "auteur": "jfj",
+          "message": "jfgj",
+          "note": 4,
+          "date": "2025-11-08T15:10:22.251Z"
+        },
+        {
+          "auteur": "fdh",
+          "message": "fghdf",
+          "note": 4,
+          "date": "2025-11-08T15:16:09.762Z"
+        }
+      ]
+    }
+  ]
+}

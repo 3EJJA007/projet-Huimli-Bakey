@@ -1,0 +1,9 @@
+<div class="card shadow-sm mb-3">
+  <img [src]="site.photo" class="card-img-top" alt="{{ site.nom }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ site.nom }}</h5>
+    <p class="card-text"><b>Localisation :</b> {{ site.localisation }}</p>
+    <p class="card-text"><b>Prix d'entrée :</b> {{ site.prixEntree |prix }}</p>
+    <a [routerLink]="['/sites', site.id]" class="btn btn-outline-primary btn-sm">Détails</a>
+  </div>
+</div>

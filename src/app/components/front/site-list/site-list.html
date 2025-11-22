@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Liste des sites archéologiques</h2>
+
+   <h2>Recherche de patrimoines</h2>
+
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <input type="text" class="form-control"
+             placeholder="Rechercher par nom"
+             [(ngModel)]="searchName">
+    </div>
+
+    <div class="col-md-4">
+      <input type="number" class="form-control"
+             placeholder="Prix maximum"
+             [(ngModel)]="searchPrice">
+    </div>
+  </div>
+
+  <h4>Résultats :</h4>
+ <div class="row">
+    @for (site of filtrerSites(); track site.id) {
+      <div class="col-md-4 mb-3">
+        <app-site-item [site]="site"></app-site-item>
+      </div>
+    } 
+  </div>
+    
+  
+</div>
