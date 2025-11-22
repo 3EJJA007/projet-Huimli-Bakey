@@ -14,5 +14,5 @@ import { PrixPipe } from '../../../pipes/prix-pipe';
   styleUrls: ['./site-item.css']
 })
 export class SiteItemComponent {
-  @Input() site!: SiteArcheologique; // 👈 data passed from parent
+  @Input() site!: SiteArcheologique;
 }

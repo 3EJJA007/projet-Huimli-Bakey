@@ -35,8 +35,8 @@ ngOnInit(): void {
 
 onCommentaireAjoute(nouveau: Commentaire): void {
   this.siteService.addCommentaire(this.site, nouveau).subscribe(siteMaj => {
-    this.site = siteMaj;              // mise à jour du site local
-    this.cdr.detectChanges();         // rafraîchissement pour le mode zoneless
+    this.site = siteMaj; 
+    this.cdr.detectChanges(); 
     
   });
 }

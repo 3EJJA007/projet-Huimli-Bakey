@@ -12,20 +12,17 @@ import { Commentaire } from '../../../models/commentaire.interface';
   styleUrls: ['./commentaire-add.css']
 })
 export class CommentaireAddComponent {
-  // Le parent (site-detail) enverra ici la liste des commentaires
   @Input() commentaires!: Commentaire[];
 
-  // Événement émis au parent après ajout
   @Output() commentaireAjoute = new EventEmitter<Commentaire>();
 
   private readonly fb = inject(FormBuilder);
   private readonly cdr = inject(ChangeDetectorRef);
 
-  // Formulaire réactif
   formCommentaire: FormGroup = this.fb.group({
-    auteur: [''],
-    message: [''],
-    note: [0],
+    auteur: ['', Validators.required],
+    message: ['', [Validators.required, Validators.minLength(3)]],
+    note: [0, [Validators.required, Validators.min(1), Validators.max(5)]],
   });
 
 onAjouter(): void {
@@ -37,11 +34,9 @@ onAjouter(): void {
       date: new Date()
     };
 
-    // Émettre l'événement au parent
     this.commentaireAjoute.emit(nouveau);
 
-    // Réinitialiser le formulaire
     this.formCommentaire.reset({ note: 0 });
-    this.cdr.detectChanges(); // 🔥 pour le mode zoneless
+    this.cdr.detectChanges(); 
   }
 }

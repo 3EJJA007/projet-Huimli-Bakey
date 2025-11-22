@@ -26,7 +26,7 @@ export class SiteAdminFormComponent {
 
   onSubmit() {
     this.siteService.addSite(this.siteForm.value).subscribe(() => {
-      this.router.navigate(['/admin']); // retour à la liste
+      this.router.navigate(['/admin']);
     });
   }
 }

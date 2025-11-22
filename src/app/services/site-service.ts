@@ -50,11 +50,9 @@ export class SiteService {
       prixEntree: site.prixEntree,
       description: site.description,
       ouvert: site.ouvert,
-      // 2️⃣ Copier les anciens commentaires et ajouter le nouveau
       commentaires: site.commentaires.concat(nouveau)
     };
 
-    // 3️⃣ Envoyer la mise à jour au serveur
     return this.http.put<SiteArcheologique>(`${URL}/${site.id}`, siteMisAJour);
   }
 
